@@ -22,9 +22,10 @@ namespace GIG.Controllers {
             return View(videos);
         }
 
-        [HttpGet]
+        [HttpPost]
         public ActionResult Vote(string videoId) {
-            return Json(5);
+            var result = new { votes = 16, voted = true, video = videoId };
+            return Json(result);
         }
     }
 }

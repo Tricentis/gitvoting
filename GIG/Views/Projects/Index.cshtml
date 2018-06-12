@@ -29,15 +29,15 @@
                 // I am lazy
             }
 
-            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 videoframe" id="videoframe-@video.Team">
                 <div class="hovereffect">
                     <img class="img-responsive" src="@thumbnail" alt="">
                     <div class="overlay">
                         <p>@abstractText</p>
                         <a class="info" href="@video.Videolink" target="_blank" title="Watch Video on Egnyte"><i class="glyphicon glyphicon-play"></i> Video</a>
-                        <a class="info" href="#" title="Upvote Video">Vote <span class="badge">4</span></a>
                     </div>
                 </div>
+                <div class="pull-right votes" title="Upvote video"><span id="votes-video-@video.Team" data-video="@video.Team">4</span> <i id="voting-video-@video.Team" class="glyphicon glyphicon-star-empty voting" data-video="@video.Team"></i></div>
             </div>
 
 
@@ -45,26 +45,62 @@
     }
 
 </div>
+
+@section scripts {
 <script type="text/javascript">
-    $(document).ready(function () {
-        var url = '/projects/Vote';
+
+    $('.voting').each(function () {
+        var $this = $(this);
+        $this.on("click", function () {
+            vote($(this).data('video'));
+        });
+    });
+
+
+    function setVoted(videoId, voted) {
+        star = $("#voting-video-" + videoId);     
+        frame = $("#videoframe-" + videoId);
+
+        if (voted) {
+            star.removeClass("glyphicon-star-empty");
+            star.addClass("glyphicon-star");
+            star.css('color', 'gold');
+            frame.css('border', '5px solid gold');
+        } else {
+            star.removeClass("glyphicon-star");
+            star.addClass("glyphicon-star-empty");
+            star.css('color', 'white');
+            frame.css('border', '5px solid white');
+        }
+    }
+
+    function setVotes(videoId, votes) {
+        votesElement = $("#votes-video-" + videoId);
+        votesElement.text(votes);
+    }
+
+
+    function vote(id) {
+        var url = "@Url.Action("Vote", "Projects")";
 
         $.ajax({
             type: "POST",
-            url: serviceURL,
-            data: param = "",
+            url: url,
+            data: "{ 'videoId': " + id + " }",
             contentType: "application/json; charset=utf-8",
             dataType: "json",
             success: successFunc,
             error: errorFunc
         });
 
-        function successFunc(data, status) {
-            alert(data);
+        function successFunc(data, status) {         
+            setVoted(data.video, data.voted);
+            setVotes(data.video, data.votes);
         }
 
         function errorFunc() {
-            alert('error');
+            alert('something went wrong');
         }
-    });
+    }
 </script>
+}

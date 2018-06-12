@@ -109,3 +109,6 @@ UpgradeLog*.XML
 /.vs
 /ffmpeg
 /DigiCertUtil.exe
+/gig_tricentis_com.pfx
+/gig_tricentis_com.crt
+/DigiCertCA.crt
