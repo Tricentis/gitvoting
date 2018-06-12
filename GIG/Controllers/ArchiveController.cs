@@ -6,7 +6,6 @@ using System.Web.Mvc;
 
 namespace GIG.Controllers
 {
-    [Authorize]
     public class ArchiveController : Controller
     {
         public ActionResult Index()

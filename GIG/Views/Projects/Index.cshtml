@@ -45,4 +45,26 @@
     }
 
 </div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        var url = '/projects/Vote';
 
+        $.ajax({
+            type: "POST",
+            url: serviceURL,
+            data: param = "",
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            success: successFunc,
+            error: errorFunc
+        });
+
+        function successFunc(data, status) {
+            alert(data);
+        }
+
+        function errorFunc() {
+            alert('error');
+        }
+    });
+</script>
