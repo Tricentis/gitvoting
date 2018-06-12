@@ -10,30 +10,32 @@
 <div class="vertical-space-md"></div>
 <div class="row">
 
-    @{foreach (var video in Model)
-        {
+    @{foreach (var video in Model) {
 
             var thumbnail = String.Format("../Content/{0}/stills/{1}", gig, video.ThumbnailFile);
             var abstractText = "Text Missing";
 
-            using (StreamReader sr = new StreamReader(
-                Server.MapPath(String.Format("~/Content/{0}/abstracts/{1}", gig, video.AbstractFile)))) {
+            try {
+                using (StreamReader sr = new StreamReader(
+                    Server.MapPath(String.Format("~/Content/{0}/abstracts/{1}", gig, video.AbstractFile)))) {
 
-                abstractText = sr.ReadToEnd();
+                    abstractText = sr.ReadToEnd();
 
-                if (abstractText.Length > 140)
-                {
-                    abstractText = abstractText.Substring(0, 137) + "...";
+                    if (abstractText.Length > 140) {
+                        abstractText = abstractText.Substring(0, 137) + "...";
+                    }
                 }
+            } catch (Exception e) {
+                // I am lazy
             }
-
 
             <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
                 <div class="hovereffect">
                     <img class="img-responsive" src="@thumbnail" alt="">
                     <div class="overlay">
                         <p>@abstractText</p>
-                        <a class="info" href="@video.Videolink" target="_blank" title="Watch Video on Egnyte">watch video</a>
+                        <a class="info" href="@video.Videolink" target="_blank" title="Watch Video on Egnyte"><i class="glyphicon glyphicon-play"></i> Video</a>
+                        <a class="info" href="#" title="Upvote Video">Vote <span class="badge">4</span></a>
                     </div>
                 </div>
             </div>

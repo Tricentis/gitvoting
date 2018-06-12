@@ -106,6 +106,10 @@ input[type="checkbox"].input-validation-error {
         padding: 10px;
     }
 
+    .hovereffect .badge {
+        background-color: cornflowerblue;
+    }
+
     .hovereffect a.info {
         text-decoration: none;
         display: inline-block;
