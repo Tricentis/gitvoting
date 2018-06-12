@@ -1,0 +1,5 @@
+Easy C# ScriptEditor for TestStepValues in TOSCA
+1.No unsolvable calculations
+2.No unnecessary escaping
+3.Huge flexibility
+4.Even for developers

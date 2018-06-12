@@ -1,0 +1,2 @@
+No Update All
+We are lifting the Commander to a state of the art application by taking away the need for a user to manually update his workspace.

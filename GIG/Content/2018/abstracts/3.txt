@@ -1,0 +1,5 @@
+Tosca Scheduler, which is based on the Windows Scheduler. 
+Run your execution lists on your local machine at the time specified.
+Valid for single-user workspaces and for multi-user ones.
+
+Behind the scenes: When the task is created or deleted in the Tosca Scheduler, the corresponding task is created or deleted in the Windows Scheduler.

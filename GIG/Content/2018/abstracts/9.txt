@@ -1,0 +1,1 @@
+Save a lot of time by eliminating most scrolling effort, creation & docking of new windows and JumpTo operations when working with Tosca.

@@ -1,0 +1,1 @@
+Email functionality inside Tosca as Menu Strip Option, which adds predefined reports of Requirements & Execution List. It will send Reports to the specified users within a project in a few clicks.

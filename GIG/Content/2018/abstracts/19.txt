@@ -1,0 +1,1 @@
+Quick Chat is the Messaging facility in Tosca Commander which will enable Tosca users to Communicate within team, Cutting Short the time to switch to an external Communicator.

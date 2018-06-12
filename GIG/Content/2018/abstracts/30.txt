@@ -1,0 +1,1 @@
+Create platform to upload customisations. Adapt scanner to automatically detect if customisations exist, and provide option to install them.

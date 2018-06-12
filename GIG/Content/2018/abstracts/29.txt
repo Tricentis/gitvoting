@@ -1,0 +1,3 @@
+New User-Roles reduce Tasks/Objects for the User.
+A powerful Admin-Console maintains all Workspaces.
+Reduce friction on enterprise level!

@@ -1,0 +1,5 @@
+The idea of having a mobile app is to send personalized and concise updates 
+to Tosca users from Partner and the Customer community. 
+With this app, our goal is to connect large user base via mobile platform. 
+This app will enable the regional teams to send notifications to users.
+

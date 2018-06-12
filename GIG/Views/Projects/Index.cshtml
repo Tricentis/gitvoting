@@ -1,21 +1,46 @@
-﻿
+﻿@model IEnumerable<WebApp_WSFederation_DotNet.Models.Video>
+
 @{
     ViewBag.Title = "Projects";
     Layout = "~/Views/Shared/_Layout.cshtml";
+    string gig = (string)ViewData["gig"];
 }
 
 
 <div class="vertical-space-md"></div>
-
 <div class="row">
-    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-        <div class="hovereffect">
-            <img class="img-responsive" src="https://miketricking.github.io/bootstrap-image-hover/images/girl.jpg" alt="">
-            <div class="overlay">
-                <p>I need to come up with a description that is exactely 140 characters long which will be the overall limit allowed for the abstracts during GIG.</p>
-                <a class="info" href="#">watch video</a>
+
+    @{foreach (var video in Model)
+        {
+
+            var thumbnail = String.Format("../Content/{0}/stills/{1}", gig, video.ThumbnailFile);
+            var abstractText = "Text Missing";
+
+            using (StreamReader sr = new StreamReader(
+                Server.MapPath(String.Format("~/Content/{0}/abstracts/{1}", gig, video.AbstractFile)))) {
+
+                abstractText = sr.ReadToEnd();
+
+                if (abstractText.Length > 140)
+                {
+                    abstractText = abstractText.Substring(0, 137) + "...";
+                }
+            }
+
+
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                <div class="hovereffect">
+                    <img class="img-responsive" src="@thumbnail" alt="">
+                    <div class="overlay">
+                        <p>@abstractText</p>
+                        <a class="info" href="@video.Videolink" target="_blank" title="Watch Video on Egnyte">watch video</a>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
+
+
+        }
+    }
+
 </div>
 

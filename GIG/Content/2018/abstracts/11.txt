@@ -1,0 +1,1 @@
+Feature which improving UX. It allows us to add properties from XScan to Commander modules. It also allows adding TCPs using DB.

@@ -1,0 +1,8 @@
+Sprint Planning option within Tricentis Tosca will allow the Agile team to define the work and effort. 
+Tricentis Tosca User can –
+• Plan a Sprint by defining efforts at User Story and Resource level which help in defining a clear Sprint Goal
+• Understand the Epic and User Story Status at any given point
+• Understand the Resource Allocation Status (Resource Management)
+• Evaluate Efforts
+
+All Project artifacts are in or integrated within Tricentis Tosca

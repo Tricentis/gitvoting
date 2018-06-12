@@ -1,0 +1,4 @@
+
+												SLACK INTEGRATION 
+We wish to integrate slack with Tosca. When a user enters any predefine Command in slack, it will give related responses for example execution list status. So, the response is routinely shared among team members of that channel.
+

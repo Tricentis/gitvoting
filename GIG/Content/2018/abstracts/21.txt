@@ -1,0 +1,1 @@
+Bring Checkin to the next level by showing in a comprehensive and conclusive way, what was changed and their effects before committing them.

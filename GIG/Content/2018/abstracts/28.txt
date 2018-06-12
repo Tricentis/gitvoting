@@ -1,0 +1,1 @@
+ToscaScheduler gives a GUI for scheduling recurring events(reports, TestEvents, ExecutionLists, etc.) without requiring technical knowledge.

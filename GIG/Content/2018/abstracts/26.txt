@@ -1,0 +1,1 @@
+ PDF Engine can scan and compare PDF elements from the browser itself. The new PDF Engine will be a bug-free, extensible and ready-to-use AddOn.

@@ -1,0 +1,4 @@
+XScan - Making controls unique might be difficult
+* Compare controls
+* Highlight conflicts
+* Automatically select unique properties

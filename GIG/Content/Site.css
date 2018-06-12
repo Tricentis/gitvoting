@@ -66,6 +66,8 @@ input[type="checkbox"].input-validation-error {
     position: relative;
     text-align: center;
     cursor: default;
+    margin: 10px;
+    border: 1px solid #333;
 }
 
     .hovereffect .overlay {
@@ -83,6 +85,7 @@ input[type="checkbox"].input-validation-error {
 
     .hovereffect img {
         display: block;
+        height: 175px;
         position: relative;
         -webkit-transition: all .4s linear;
         transition: all .4s linear;
