@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Optimization;
 
-namespace WebApp_WSFederation_DotNet
+namespace GIG
 {
     public class BundleConfig
     {

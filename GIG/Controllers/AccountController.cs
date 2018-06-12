@@ -25,7 +25,7 @@ using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.WsFederation;
 using Microsoft.Owin.Security;
 
-namespace WebApp_WSFederation_DotNet.Controllers
+namespace GIG.Controllers
 {
     public class AccountController : Controller
     {

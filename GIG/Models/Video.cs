@@ -4,7 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Web;
 
-namespace WebApp_WSFederation_DotNet.Models
+namespace GIG.Models
 {
     public class Video
     {

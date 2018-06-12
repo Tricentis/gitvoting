@@ -30,7 +30,7 @@ using System.Threading.Tasks;
 using System.Diagnostics;
 using System.IdentityModel.Tokens;
 
-namespace WebApp_WSFederation_DotNet
+namespace GIG
 {
     public partial class Startup
     {

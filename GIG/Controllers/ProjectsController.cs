@@ -7,7 +7,7 @@ using System.Web;
 using System.Web.Configuration;
 using System.Web.Mvc;
 
-namespace WebApp_WSFederation_DotNet.Controllers
+namespace GIG.Controllers
 {
     
     public class ProjectsController : Controller

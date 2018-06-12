@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace WebApp_WSFederation_DotNet.Controllers
+namespace GIG.Controllers
 {
     
     public class HomeController : Controller

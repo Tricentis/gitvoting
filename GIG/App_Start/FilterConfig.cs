@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Mvc;
 
-namespace WebApp_WSFederation_DotNet
+namespace GIG
 {
     public class FilterConfig
     {

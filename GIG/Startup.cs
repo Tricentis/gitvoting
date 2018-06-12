@@ -19,9 +19,9 @@ using System.Threading.Tasks;
 using Microsoft.Owin;
 using Owin;
 
-[assembly: OwinStartup(typeof(WebApp_WSFederation_DotNet.Startup))]
+[assembly: OwinStartup(typeof(GIG.Startup))]
 
-namespace WebApp_WSFederation_DotNet
+namespace GIG
 {
     public partial class Startup
     {
