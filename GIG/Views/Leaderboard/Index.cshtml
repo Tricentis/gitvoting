@@ -1,0 +1,27 @@
+﻿@model Dictionary<string, int>
+
+@{
+    ViewBag.Title = "Leaderboard";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Team</th>
+            <th scope="col">Votes</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        @foreach (KeyValuePair<string, int> kvp in Model) {
+
+            <tr>
+                <td>@kvp.Key</td>
+                <td>@kvp.Value</td>
+            </tr>
+
+        }
+
+    </tbody>
+</table>
