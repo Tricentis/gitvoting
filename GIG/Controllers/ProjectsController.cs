@@ -11,6 +11,7 @@ using System.Web.Mvc;
 
 namespace GIG.Controllers {
 
+    [Authorize]
     public class ProjectsController : Controller {
 
         private GIGContext db = new GIGContext();
