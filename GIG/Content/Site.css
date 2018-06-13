@@ -170,3 +170,7 @@ input[type="checkbox"].input-validation-error {
     padding-right: 10px;
     padding-bottom: 10px
 }
+
+.voting {
+    cursor: pointer;
+}
