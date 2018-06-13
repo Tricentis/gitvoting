@@ -4,10 +4,27 @@
     ViewBag.Title = "Projects";
     Layout = "~/Views/Shared/_Layout.cshtml";
     string gig = (string)ViewData["gig"];
+    string sortOrder = (string)ViewData["sortOrder"];
+
+    var teamorderactive = "btn-secondary";
+    var votesorderactive = "btn-secondary";
+    var shuffleactive = "btn-secondary";
+
+    if (sortOrder == "team") { teamorderactive = "btn-primary"; }
+    if (sortOrder == "votes") { votesorderactive = "btn-primary"; }
+    if (sortOrder == "shuffle") { shuffleactive = "btn-primary"; }
+
 }
 
-
 <div class="vertical-space-md"></div>
+<div>
+    <a href="?sortOrder=team" class="btn btn-sm @teamorderactive"><i class="glyphicon glyphicon-user"></i> by team</a> 
+    <a href="?sortOrder=votes" class="btn btn-sm @votesorderactive"><i class="glyphicon glyphicon-star"></i> by votes</a> 
+    <a href="?sortOrder=shuffle" class="btn btn-sm @shuffleactive"><i class="glyphicon glyphicon-random"></i> shuffle</a>
+</div>
+
+<div class="vertical-space-xs"></div>    
+
 <div class="row">
 
     @{foreach (var video in Model) {
@@ -36,6 +53,8 @@
                 starclass = "glyphicon-star";
             }
 
+
+
             <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 videoframe" id="videoframe-@video.Team" style="border: 5px solid @color">
                 <div class="hovereffect">
                     <img class="img-responsive" src="@thumbnail" alt="">
@@ -53,8 +72,8 @@
 
 </div>
 
-@section scripts {
-<script type="text/javascript">
+    @section scripts {
+        <script type="text/javascript">
 
     $('.voting').each(function () {
         var $this = $(this);
@@ -65,7 +84,7 @@
 
 
     function setVoted(videoId, voted) {
-        star = $("#voting-video-" + videoId);     
+        star = $("#voting-video-" + videoId);
         frame = $("#videoframe-" + videoId);
 
         if (voted) {
@@ -100,7 +119,7 @@
             error: errorFunc
         });
 
-        function successFunc(data, status) {         
+        function successFunc(data, status) {
             setVoted(data.video, data.voted);
             setVotes(data.video, data.votes);
         }
@@ -109,5 +128,5 @@
             alert('something went wrong');
         }
     }
-</script>
-}
+        </script>
+    }

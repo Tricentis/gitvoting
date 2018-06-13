@@ -17,7 +17,7 @@ namespace GIG.Controllers {
         private GIGContext db = new GIGContext();
         private string currentgigyear = WebConfigurationManager.AppSettings["CurrentGIG"];
 
-        public ActionResult Index() {
+        public ActionResult Index(string sortOrder) {
             var votes = db.Votes
                    .Where(v => v.Year == currentgigyear)
                    .GroupBy(v => v.Team)
@@ -29,6 +29,7 @@ namespace GIG.Controllers {
                     .ToDictionary(d => d.Team, d => d.Team);
 
             ViewData["gig"] = currentgigyear;
+            ViewData["sortorder"] = string.IsNullOrEmpty(Request["sortOrder"]) ? "team" : Request["sortOrder"];
 
             List<Video> videos;
             using (StreamReader sr = new StreamReader(Server.MapPath($"~/Content/{currentgigyear}/info.json"))) {
@@ -40,6 +41,21 @@ namespace GIG.Controllers {
                 }
 
                 video.VotedByMe = votedByMe.ContainsKey(video.Team);
+            }
+
+            switch (sortOrder) {
+                case "team":
+                    videos = videos.OrderBy(v => v.Team).ToList();
+                    break;
+                case "votes":
+                    videos = videos.OrderByDescending(v => v.Votes).ToList();
+                    break;
+                case "shuffle":
+                    videos = videos.OrderBy(v => Guid.NewGuid()).ToList();
+                    break;
+                default:
+                    videos = videos.OrderBy(v => v.Team).ToList();
+                    break;
             }
 
             return View(videos);

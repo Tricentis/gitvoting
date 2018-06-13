@@ -50,6 +50,14 @@ input[type="checkbox"].input-validation-error {
     font-size: 50px;
 }
 
+.vertical-space-xs {
+    height: 10px;
+}
+
+.vertical-space-sm {
+    height: 25px;
+}
+
 .vertical-space-md {
     height: 50px;
 }
