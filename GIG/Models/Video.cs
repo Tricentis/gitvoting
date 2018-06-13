@@ -12,5 +12,10 @@ namespace GIG.Models
         public string ThumbnailFile { get; set; }
         public string AbstractFile { get; set; }
         public string Videolink { get; set; }
+
+
+        public int Votes { get; set; }
+
+        public bool VotedByMe { get; set; }
     }
 }

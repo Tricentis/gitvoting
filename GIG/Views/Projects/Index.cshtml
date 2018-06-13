@@ -29,7 +29,14 @@
                 // I am lazy
             }
 
-            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 videoframe" id="videoframe-@video.Team">
+            var color = "white";
+            var starclass = "glyphicon-star-empty";
+            if (video.VotedByMe) {
+                color = "gold";
+                starclass = "glyphicon-star";
+            }
+
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 videoframe" id="videoframe-@video.Team" style="border: 5px solid @color">
                 <div class="hovereffect">
                     <img class="img-responsive" src="@thumbnail" alt="">
                     <div class="overlay">
@@ -37,7 +44,7 @@
                         <a class="info" href="@video.Videolink" target="_blank" title="Watch Video on Egnyte"><i class="glyphicon glyphicon-play"></i> Video</a>
                     </div>
                 </div>
-                <div class="pull-right votes" title="Upvote video"><span id="votes-video-@video.Team" data-video="@video.Team">4</span> <i id="voting-video-@video.Team" class="glyphicon glyphicon-star-empty voting" data-video="@video.Team"></i></div>
+                <div class="pull-right votes" title="Upvote video"><span id="votes-video-@video.Team" data-video="@video.Team">@video.Votes</span> <i id="voting-video-@video.Team" class="glyphicon @starclass voting" style="color: @color" data-video="@video.Team"></i></div>
             </div>
 
 
