@@ -8,7 +8,7 @@ using System.Web.Mvc;
 
 namespace GIG.Controllers {
 
-    //[Authorize]
+    [Authorize]
     public class LeaderboardController : Controller {
 
         private GIGContext db = new GIGContext();
