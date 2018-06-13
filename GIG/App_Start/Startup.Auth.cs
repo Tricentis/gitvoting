@@ -53,6 +53,7 @@ namespace GIG
         {
             app.SetDefaultSignInAsAuthenticationType(CookieAuthenticationDefaults.AuthenticationType);
 
+            app.UseKentorOwinCookieSaver();
             app.UseCookieAuthentication(new CookieAuthenticationOptions());
 
             app.UseWsFederationAuthentication(
