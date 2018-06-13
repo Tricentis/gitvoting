@@ -31,10 +31,15 @@ namespace GIG.Controllers {
             ViewData["gig"] = currentgigyear;
             ViewData["sortorder"] = string.IsNullOrEmpty(Request["sortOrder"]) ? "team" : Request["sortOrder"];
 
-            List<Video> videos;
-            using (StreamReader sr = new StreamReader(Server.MapPath($"~/Content/{currentgigyear}/info.json"))) {
-                videos = JsonConvert.DeserializeObject<List<Video>>(sr.ReadToEnd());
+            List<Video> videos = new List<Video>();
+            try {
+                using (StreamReader sr = new StreamReader(Server.MapPath($"~/Content/{currentgigyear}/info.json"))) {
+                    videos = JsonConvert.DeserializeObject<List<Video>>(sr.ReadToEnd());
+                }
+            } catch {
+                // no videos
             }
+
             foreach (Video video in videos) {
                 if (votes.ContainsKey(video.Team)) {
                     video.Votes = votes[video.Team];
