@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Net;
 using System.Web;
 using System.Web.Configuration;
 using System.Web.Mvc;
@@ -16,6 +17,7 @@ namespace GIG.Controllers {
 
         private GIGContext db = new GIGContext();
         private string currentgigyear = WebConfigurationManager.AppSettings["CurrentGIG"];
+        private bool votingEnabled = Boolean.Parse(WebConfigurationManager.AppSettings["VotingEnabled"]);
 
         public ActionResult Index(string sortOrder) {
             var votes = db.Votes
@@ -39,6 +41,8 @@ namespace GIG.Controllers {
             } catch {
                 // no videos
             }
+
+            if (videos == null) { return View();  }
 
             foreach (Video video in videos) {
                 if (votes.ContainsKey(video.Team)) {
@@ -68,6 +72,11 @@ namespace GIG.Controllers {
 
         [HttpPost]
         public ActionResult Vote(string videoId) {
+            if (!votingEnabled) {
+                Response.StatusCode = (int)HttpStatusCode.BadRequest;
+                return Json("Voting Not Enabled Yet");
+            }
+
             var myVote = db.Votes.Where(
                             v => v.Year == currentgigyear && 
                             v.Team == videoId && 

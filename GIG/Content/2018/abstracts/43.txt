@@ -1,0 +1,1 @@
+Abstract - A cleanup scenario that sends a message to Slack with details about the failed testcase.

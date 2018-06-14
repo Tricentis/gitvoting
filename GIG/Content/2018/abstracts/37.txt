@@ -1,0 +1,2 @@
+Finally a designated place for Buffers where they belong.
+View, maintain and trace them in the Buffer Area - and you can delete them.

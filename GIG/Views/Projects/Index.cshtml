@@ -26,6 +26,10 @@
 <div class="vertical-space-xs"></div>    
 
 <div class="row">
+    @{ if (Model == null) {
+            return;
+        }
+    }
 
     @{foreach (var video in Model) {
 
@@ -124,8 +128,12 @@
             setVotes(data.video, data.votes);
         }
 
-        function errorFunc() {
-            alert('something went wrong');
+        function errorFunc(data, status) {
+            if (data != null) {
+                alert(data.responseText)
+            } else {
+                alert('something went wrong');
+            }
         }
     }
         </script>
