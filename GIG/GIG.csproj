@@ -226,8 +226,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Content\2018\abstracts\" />
-    <Folder Include="Content\2018\stills\" />
     <Folder Include="Views\Account\" />
   </ItemGroup>
   <ItemGroup>
@@ -310,6 +308,18 @@
     <Content Include="Content\2017\stills\5.png" />
     <Content Include="Content\2017\stills\6.png" />
     <Content Include="Content\2017\stills\8.png" />
+    <Content Include="Content\2018\abstracts\2.txt" />
+    <Content Include="Content\2018\abstracts\33.txt" />
+    <Content Include="Content\2018\abstracts\36.txt" />
+    <Content Include="Content\2018\abstracts\37.txt" />
+    <Content Include="Content\2018\abstracts\42.txt" />
+    <Content Include="Content\2018\abstracts\43.txt" />
+    <Content Include="Content\2018\stills\2.png" />
+    <Content Include="Content\2018\stills\33.png" />
+    <Content Include="Content\2018\stills\36.png" />
+    <Content Include="Content\2018\stills\37.png" />
+    <Content Include="Content\2018\stills\42.png" />
+    <Content Include="Content\2018\stills\43.png" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
