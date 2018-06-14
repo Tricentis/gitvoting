@@ -1,15 +1,76 @@
-﻿
+﻿@model IEnumerable<GIG.Models.Video>
+
 @{
     ViewBag.Title = "Archive";
     Layout = "~/Views/Shared/_Layout.cshtml";
+
+    string gig = (string)ViewData["gig"];
+    List<string> archives = (List<string>)ViewData["archives"];
 }
 
-@if (!Request.IsAuthenticated) {
-    <h2>Unauthorized</h2>
-    <p>Please sign in first.</p>
-} else {
 
-    <h2>Haha</h2>
-    <p>Ain't nobody got time for that.</p>
+<div class="vertical-space-md"></div>
+<div>
+    @{
+        foreach (string archive in archives) {
+            var active = (archive == gig) ? "btn-primary" : "btn-secondary";
 
+            <a href="?year=@archive" class="btn btn-sm @active">@archive</a>
+        }
+    
 }
+</div>
+
+<div class="vertical-space-xs"></div>
+
+<div class="row">
+
+    @{
+        if (Model == null) {
+            return;
+        }
+
+        foreach (var video in Model) {
+
+            var thumbnail = String.Format("../Content/{0}/stills/{1}", gig, video.ThumbnailFile);
+            var abstractText = "Text Missing";
+
+            try {
+                using (StreamReader sr = new StreamReader(
+                    Server.MapPath(String.Format("~/Content/{0}/abstracts/{1}", gig, video.AbstractFile)))) {
+
+                    abstractText = sr.ReadToEnd();
+
+                    if (abstractText.Length > 140) {
+                        abstractText = abstractText.Substring(0, 137) + "...";
+                    }
+                }
+            } catch (Exception e) {
+                // I am lazy
+            }
+
+            var color = "white";
+            var starclass = "glyphicon-star-empty";
+            if (video.VotedByMe) {
+                color = "gold";
+                starclass = "glyphicon-star";
+            }
+
+
+
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 videoframe" id="videoframe-@video.Team" style="border: 5px solid @color">
+                <div class="hovereffect">
+                    <img class="img-responsive" src="@thumbnail" alt="">
+                    <div class="overlay">
+                        <p>@abstractText</p>
+                        <a class="info" href="@video.Videolink" target="_blank" title="Watch Video on Egnyte"><i class="glyphicon glyphicon-play"></i> Video</a>
+                    </div>
+                </div>
+                <div class="pull-right votes"><span data-video="@video.Team">@video.Votes</span> <i id="voting-video-@video.Team" class="glyphicon @starclass voting" style="color: @color; cursor: default;" data-video="@video.Team"></i></div>
+            </div>
+
+
+        }
+    }
+
+</div>
