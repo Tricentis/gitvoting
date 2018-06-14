@@ -11,7 +11,7 @@ using System.Web.Mvc;
 
 namespace GIG.Controllers
 {
-    //[Authorize]
+    [Authorize]
     public class ArchiveController : Controller
     {
         private GIGContext db = new GIGContext();
