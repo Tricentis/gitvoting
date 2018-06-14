@@ -1,0 +1,1 @@
+QuiXScan adds icon on title bar of every open window and enables direct scan with single click. Keep your focus where it should be!

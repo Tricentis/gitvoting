@@ -1,15 +1,153 @@
 ﻿[
   {
+    "Team": 1,
+    "ThumbnailFile": "1.png",
+    "AbstractFile": "1.txt",
+    "Videolink": "https://tricentis.egnyte.com/dl/vWitYRzO9E"
+  },
+  {
     "Team": 2,
     "ThumbnailFile": "2.png",
     "AbstractFile": "2.txt",
     "Videolink": "https://tricentis.egnyte.com/dl/lLhhrTsDLV"
   },
   {
+    "Team": 3,
+    "ThumbnailFile": "3.png",
+    "AbstractFile": "3.txt",
+    "Videolink": "https://tricentis.egnyte.com/dl/IQBdWQOnDJ"
+  },
+  {
+    "Team": 4,
+    "ThumbnailFile": "4.png",
+    "AbstractFile": "4.txt",
+    "Videolink": "https://tricentis.egnyte.com/dl/K7FrRBAgmR"
+  },
+  {
+    "Team": 5,
+    "ThumbnailFile": "5.png",
+    "AbstractFile": "5.txt",
+    "Videolink": "https://tricentis.egnyte.com/dl/LFZswgvEHs"
+  },
+  {
+    "Team": 6,
+    "ThumbnailFile": "6.png",
+    "AbstractFile": "6.txt",
+    "Videolink": "https://tricentis.egnyte.com/dl/0FmjR3F9r7"
+  },
+  {
+    "Team": 7,
+    "ThumbnailFile": "7.png",
+    "AbstractFile": "7.txt",
+    "Videolink": "https://tricentis.egnyte.com/dl/0mJoqKuiI5"
+  },
+  {
+    "Team": 8,
+    "ThumbnailFile": "8.png",
+    "AbstractFile": "8.txt",
+    "Videolink": "https://tricentis.egnyte.com/dl/iN72DsLRiC"
+  },
+  {
+    "Team": 9,
+    "ThumbnailFile": "9.png",
+    "AbstractFile": "9.txt",
+    "Videolink": "https://tricentis.egnyte.com/dl/bDak2MkJCS"
+  },
+  {
+    "Team": 10,
+    "ThumbnailFile": "10.png",
+    "AbstractFile": "10.txt",
+    "Videolink": "https://tricentis.egnyte.com/dl/4JnMjl3aHV"
+  },
+  {
+    "Team": 11,
+    "ThumbnailFile": "11.png",
+    "AbstractFile": "11.txt",
+    "Videolink": "https://tricentis.egnyte.com/dl/ehQ5WJoOEt"
+  },
+  {
+    "Team": 12,
+    "ThumbnailFile": "12.png",
+    "AbstractFile": "12.txt",
+    "Videolink": "https://tricentis.egnyte.com/dl/vXFICN7k7f"
+  },
+  {
+    "Team": 13,
+    "ThumbnailFile": "13.png",
+    "AbstractFile": "13.txt",
+    "Videolink": "https://tricentis.egnyte.com/dl/wuvz0jS7Nx"
+  },
+  {
+    "Team": 14,
+    "ThumbnailFile": "14.png",
+    "AbstractFile": "14.txt",
+    "Videolink": "https://tricentis.egnyte.com/dl/taxb60k2a1"
+  },
+  {
+    "Team": 15,
+    "ThumbnailFile": "15.png",
+    "AbstractFile": "15.txt",
+    "Videolink": "https://tricentis.egnyte.com/dl/uWSuTCFlmd"
+  },
+  {
+    "Team": 16,
+    "ThumbnailFile": "16.png",
+    "AbstractFile": "16.txt",
+    "Videolink": "https://tricentis.egnyte.com/dl/B7v4F2KuTv"
+  },
+  {
+    "Team": 17,
+    "ThumbnailFile": "17.png",
+    "AbstractFile": "17.txt",
+    "Videolink": "https://tricentis.egnyte.com/dl/YZRovAWpq7"
+  },
+  {
+    "Team": 18,
+    "ThumbnailFile": "18.png",
+    "AbstractFile": "18.txt",
+    "Videolink": "https://tricentis.egnyte.com/dl/rzaXYNpAjF"
+  },
+  {
+    "Team": 19,
+    "ThumbnailFile": "19.png",
+    "AbstractFile": "19.txt",
+    "Videolink": "https://tricentis.egnyte.com/dl/nLj50l78qs"
+  },
+  {
+    "Team": 20,
+    "ThumbnailFile": "20.png",
+    "AbstractFile": "20.txt",
+    "Videolink": "https://tricentis.egnyte.com/dl/Gw9gbFBUKG"
+  },
+  {
+    "Team": 21,
+    "ThumbnailFile": "21.png",
+    "AbstractFile": "21.txt",
+    "Videolink": "https://tricentis.egnyte.com/dl/9KmFF9dSCj"
+  },
+  {
+    "Team": 22,
+    "ThumbnailFile": "22.png",
+    "AbstractFile": "22.txt",
+    "Videolink": "https://tricentis.egnyte.com/dl/oJmB0vHinx"
+  },
+  {
     "Team": 23,
     "ThumbnailFile": "23.png",
     "AbstractFile": "23.txt",
     "Videolink": "https://tricentis.egnyte.com/dl/xoOUi8el08"
+  },
+  {
+    "Team": 24,
+    "ThumbnailFile": "24.png",
+    "AbstractFile": "24.txt",
+    "Videolink": "https://tricentis.egnyte.com/dl/FXEi0WBTVo"
+  },
+  {
+    "Team": 25,
+    "ThumbnailFile": "25.png",
+    "AbstractFile": "25.txt",
+    "Videolink": "https://tricentis.egnyte.com/dl/WOcwP4s7J7"
   },
   {
     "Team": 26,
@@ -21,13 +159,49 @@
     "Team": 27,
     "ThumbnailFile": "27.png",
     "AbstractFile": "27.txt",
-    "Videolink": "https://tricentis.egnyte.com/dl/MCigVCZ8ic"
+    "Videolink": "https://tricentis.egnyte.com/dl/M9M5E7sNlH"
+  },
+  {
+    "Team": 28,
+    "ThumbnailFile": "28.png",
+    "AbstractFile": "28.txt",
+    "Videolink": "https://tricentis.egnyte.com/dl/Vnf9aevFzz"
+  },
+  {
+    "Team": 30,
+    "ThumbnailFile": "30.png",
+    "AbstractFile": "30.txt",
+    "Videolink": "https://tricentis.egnyte.com/dl/BwQGbqnZkZ"
+  },
+  {
+    "Team": 31,
+    "ThumbnailFile": "31.png",
+    "AbstractFile": "31.txt",
+    "Videolink": "https://tricentis.egnyte.com/dl/3y8DQxckIk"
+  },
+  {
+    "Team": 32,
+    "ThumbnailFile": "32.png",
+    "AbstractFile": "32.txt",
+    "Videolink": "https://tricentis.egnyte.com/dl/m1hJIo4nLp"
   },
   {
     "Team": 33,
     "ThumbnailFile": "33.png",
     "AbstractFile": "33.txt",
     "Videolink": "https://tricentis.egnyte.com/dl/XBHPbePtgi"
+  },
+  {
+    "Team": 34,
+    "ThumbnailFile": "34.png",
+    "AbstractFile": "34.txt",
+    "Videolink": "https://tricentis.egnyte.com/dl/Lj7C3DwILd"
+  },
+  {
+    "Team": 35,
+    "ThumbnailFile": "35.png",
+    "AbstractFile": "35.txt",
+    "Videolink": "https://tricentis.egnyte.com/dl/8wcGmCkWym"
   },
   {
     "Team": 36,
@@ -46,6 +220,24 @@
     "ThumbnailFile": "38.png",
     "AbstractFile": "38.txt",
     "Videolink": "https://tricentis.egnyte.com/dl/lUXFjBVsAS"
+  },
+  {
+    "Team": 39,
+    "ThumbnailFile": "39.png",
+    "AbstractFile": "39.txt",
+    "Videolink": "https://tricentis.egnyte.com/dl/HwiShcCD1t"
+  },
+  {
+    "Team": 40,
+    "ThumbnailFile": "40.png",
+    "AbstractFile": "40.txt",
+    "Videolink": "https://tricentis.egnyte.com/dl/oVOSpdj9oE"
+  },
+  {
+    "Team": 41,
+    "ThumbnailFile": "41.png",
+    "AbstractFile": "41.txt",
+    "Videolink": "https://tricentis.egnyte.com/dl/MS5wtEEVUq"
   },
   {
     "Team": 42,

@@ -1,0 +1,1 @@
+Flood or JMeter for testing? Why not both? And just simply switch between Flood and JMeter with one click in the Flood Execution list?

@@ -1,0 +1,1 @@
+Tosca Interactive Testing mobile app: get notifications of failing test cases from interactive sessions straight to you mobile phone.

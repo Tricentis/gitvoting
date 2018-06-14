@@ -1,0 +1,4 @@
+DEXi
+
+Current DEX types requires TOSCA Commander installation in your agent machines which is more over time consuming. 
+DEXi provides a solution to this by performing distributed execution for both classic, TBox and Engines 3.0 only via the executor agents which does not requires full TOSCA commander execution on each system, to scale your test environment faster and Increase the Pace of Test Execution via the REST API functions.

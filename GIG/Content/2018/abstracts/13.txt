@@ -1,0 +1,1 @@
+Model based custom control creation: Use drag & drop functionality in XScan to build complex custom controls without having to code.

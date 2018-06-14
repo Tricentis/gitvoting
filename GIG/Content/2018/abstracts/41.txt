@@ -1,0 +1,1 @@
+Kill Selenium and SOAP UI - No scripting/scanning/drag&drop - create Tricentis TOSCA Test cases by end user navigation + RPA

@@ -1,0 +1,4 @@
+Tosca Clippy - Your own personal assistant, who is going to:
+- teach you Tosca
+- give you best practices
+- helps you get things done

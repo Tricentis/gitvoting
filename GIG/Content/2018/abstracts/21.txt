@@ -1,0 +1,1 @@
+Tosca objects are interconnected. A lot of information is spread in many places. The Context Viewer displays it all in one single window.

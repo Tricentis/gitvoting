@@ -1,0 +1,2 @@
+Switch User Option in Multi user workspace
+-Using switch user option we can help to exchange credential within same workspace 
