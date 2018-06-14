@@ -12,7 +12,7 @@ using System.Web.Mvc;
 
 namespace GIG.Controllers {
 
-    [Authorize]
+    //[Authorize]
     public class ProjectsController : Controller {
 
         private GIGContext db = new GIGContext();
@@ -73,7 +73,7 @@ namespace GIG.Controllers {
         [HttpPost]
         public ActionResult Vote(string videoId) {
             if (!votingEnabled) {
-                Response.StatusCode = (int)HttpStatusCode.BadRequest;
+                Response.StatusCode = (int)HttpStatusCode.Forbidden;
                 return Json("Voting Not Enabled Yet");
             }
 
