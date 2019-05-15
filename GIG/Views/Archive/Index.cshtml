@@ -17,8 +17,8 @@
 
             <a href="?year=@archive" class="btn btn-sm @active">@archive</a>
         }
-    
-}
+
+    }
 </div>
 
 <div class="vertical-space-xs"></div>
@@ -56,17 +56,38 @@
                 starclass = "glyphicon-star";
             }
 
-            var src = "https://tricentisgmbh.sharepoint.com/portals/hub/_layouts/15/VideoEmbedHost.aspx?chId=" + video.Channelid.Replace("-", "%2D") + "&amp;vId=" + video.Videoid.Replace("-", "%2D") + "&amp;width=427&amp;height=240&amp;autoPlay=false&amp;showInfo=true";
+            var src = "https://tricentisgmbh.sharepoint.com/portals/hub/_layouts/15/VideoEmbedHost.aspx?chId=" + video.Channelid + "&vId=" + video.Videoid + "&width=427&height=240&autoPlay=true&showInfo=false";
 
 
             <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 videoframe" id="videoframe-@video.Team" style="padding:10px;border: 5px solid @color" data-toggle="tooltip" title="@abstractText">
-                <iframe src="@src"
-                        allowfullscreen></iframe>
+                <iframe id="embeded-player-@video.Team" src=""
+                        data-src="@src" style="display:none;" allowfullscreen></iframe>
+                <img src="@thumbnail" style="height:159px;width:304px" data-video="@video.Team" class="show-video-player"/>
                 <div class="pull-right votes"><span id="votes-video-@video.Team" data-video="@video.Team">@video.Votes</span> <i id="voting-video-@video.Team" class="glyphicon @starclass" style="color: @color" data-video="@video.Team"></i></div>
             </div>
 
 
+            }
         }
-    }
 
-</div>
+    </div>
+
+    @section scripts {
+        <script type="text/javascript">
+
+            $('.show-video-player').each(function () {
+                var $this = $(this);
+                
+                $this.on("click", function () {
+                    var video = $(this).data('video');
+                    var playerelement = $("#embeded-player-" + video);
+                    var src = playerelement.data('src');
+                    playerelement.attr('src', src);
+
+                    $this.hide();
+                    playerelement.show();
+                });
+            });
+
+        </script>
+    }
