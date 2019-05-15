@@ -12,6 +12,8 @@ namespace GIG.Models
         public string ThumbnailFile { get; set; }
         public string AbstractFile { get; set; }
         public string Videolink { get; set; }
+        public string Channelid { get; set; }
+        public string Videoid { get; set; }
 
 
         public int Votes { get; set; }

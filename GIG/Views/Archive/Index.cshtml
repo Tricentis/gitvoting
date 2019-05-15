@@ -56,17 +56,13 @@
                 starclass = "glyphicon-star";
             }
 
+            var src = "https://tricentisgmbh.sharepoint.com/portals/hub/_layouts/15/VideoEmbedHost.aspx?chId=" + video.Videoid + "&vId=" + video.Videoid + "width=427&height=240&autoPlay=false&showInfo=true";
 
 
-            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 videoframe" id="videoframe-@video.Team" style="border: 5px solid @color">
-                <div class="hovereffect">
-                    <img class="img-responsive" src="@thumbnail" alt="">
-                    <div class="overlay">
-                        <p>@abstractText</p>
-                        <a class="info" href="@video.Videolink" target="_blank" title="Watch Video on Egnyte"><i class="glyphicon glyphicon-play"></i> Video</a>
-                    </div>
-                </div>
-                <div class="pull-right votes"><span data-video="@video.Team">@video.Votes</span> <i id="voting-video-@video.Team" class="glyphicon @starclass voting" style="color: @color; cursor: default;" data-video="@video.Team"></i></div>
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 videoframe" id="videoframe-@video.Team" style="padding:10px;border: 5px solid @color" data-toggle="tooltip" title="@abstractText">
+                <iframe src="@src"
+                        allowfullscreen></iframe>
+                <div class="pull-right votes"><span id="votes-video-@video.Team" data-video="@video.Team">@video.Votes</span> <i id="voting-video-@video.Team" class="glyphicon @starclass" style="color: @color" data-video="@video.Team"></i></div>
             </div>
 
 
