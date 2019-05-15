@@ -66,9 +66,7 @@
                 starclass = "glyphicon-star";
             }
 
-            var src = "https://tricentisgmbh.sharepoint.com/portals/hub/_layouts/15/VideoEmbedHost.aspx?chId=" + video.Videoid + "&vId=" + video.Videoid + "width=427&height=240&autoPlay=false&showInfo=true";
-
-
+            var src = "https://tricentisgmbh.sharepoint.com/portals/hub/_layouts/15/VideoEmbedHost.aspx?chId=" + video.Channelid.Replace("-", "%2D") + "&amp;vId=" + video.Videoid.Replace("-", "%2D") + "&amp;width=427&amp;height=240&amp;autoPlay=false&amp;showInfo=true";
 
             <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 videoframe" id="videoframe-@video.Team" style="border: 5px solid @color" data-toggle="tooltip" title="@abstractText">
                 <iframe 
