@@ -71,7 +71,7 @@ namespace GIG.Controllers {
         }
 
         [HttpPost]
-        public ActionResult Vote(string teamId) {
+        public ActionResult Vote(string videoId) {
             if (!votingEnabled) {
                 Response.StatusCode = (int)HttpStatusCode.Forbidden;
                 return Json("Voting Not Enabled Yet");
@@ -79,7 +79,7 @@ namespace GIG.Controllers {
 
             var myVote = db.Votes.Where(
                             v => v.Year == currentgigyear && 
-                            v.Team == teamId && 
+                            v.Team == videoId && 
                             v.Username == User.Identity.Name)
                          .SingleOrDefault();
 
@@ -87,7 +87,7 @@ namespace GIG.Controllers {
 
             if (myVote == null) {
                 var vote = db.Votes.Create();
-                vote.Team = teamId;
+                vote.Team = videoId;
                 vote.Username = User.Identity.Name;
                 vote.Year = currentgigyear;
                 db.Votes.Add(vote);
@@ -99,9 +99,9 @@ namespace GIG.Controllers {
                 voted = false;
             }
 
-            var votes = db.Votes.Where(v => v.Year == currentgigyear && v.Team == teamId).Count();
+            var votes = db.Votes.Where(v => v.Year == currentgigyear && v.Team == videoId).Count();
 
-            var result = new { votes = votes, voted = voted, video = teamId };
+            var result = new { votes = votes, voted = voted, video = videoId };
             return Json(result);
         }
     }
