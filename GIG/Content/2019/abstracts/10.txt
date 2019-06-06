@@ -1,0 +1,1 @@
+A service helps user to start a testcase automatically with just sending a Slack message according to defined format.

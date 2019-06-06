@@ -1,0 +1,1 @@
+Automatic dashboard for: release timeline, commit being worked on, build and then environment to test. https://qas-labs.github.io/inventory/

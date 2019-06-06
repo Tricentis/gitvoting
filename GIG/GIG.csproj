@@ -392,6 +392,12 @@
     <Content Include="Content\2018\stills\7.png" />
     <Content Include="Content\2018\stills\8.png" />
     <Content Include="Content\2018\stills\9.png" />
+    <Content Include="Content\2019\abstracts\09.txt" />
+    <Content Include="Content\2019\abstracts\10.txt" />
+    <Content Include="Content\2019\abstracts\11.txt" />
+    <Content Include="Content\2019\abstracts\12.txt" />
+    <Content Include="Content\2019\abstracts\18.txt" />
+    <Content Include="Content\2019\abstracts\24.txt" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -411,6 +417,7 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\2017\info.json" />
     <Content Include="Content\2018\info.json" />
+    <Content Include="Content\2019\info.json" />
     <None Include="Properties\PublishProfiles\GIGVoting - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <None Include="Scripts\jquery-2.1.1.intellisense.js" />

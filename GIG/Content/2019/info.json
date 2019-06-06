@@ -1,0 +1,44 @@
+﻿[
+  {
+    "Team": 9,
+    "ThumbnailFile": "9.png",
+    "AbstractFile": "9.txt",
+    "Channelid": "9b4f3812-1772-4a8e-9c97-91f984b867f5",
+    "Videoid": "76cf082f-0b53-467a-8f02-c03d48c42c82"
+  },
+  {
+    "Team": 10,
+    "ThumbnailFile": "10.png",
+    "AbstractFile": "10.txt",
+    "Channelid": "9b4f3812-1772-4a8e-9c97-91f984b867f5",
+    "Videoid": "f641e896-beae-4ed8-809c-1161d33df23a"
+  },
+  {
+    "Team": 11,
+    "ThumbnailFile": "11.png",
+    "AbstractFile": "11.txt",
+    "Channelid": "9b4f3812-1772-4a8e-9c97-91f984b867f5",
+    "Videoid": "4026a736-2aa1-40eb-89fb-e35eec9b1fef"
+  },
+  {
+    "Team": 12,
+    "ThumbnailFile": "12.png",
+    "AbstractFile": "12.txt",
+    "Channelid": "9b4f3812-1772-4a8e-9c97-91f984b867f5",
+    "Videoid": "193343a0-61c9-425f-bda1-a1e25ee894cb"
+  },
+  {
+    "Team": 18,
+    "ThumbnailFile": "18.png",
+    "AbstractFile": "18.txt",
+    "Channelid": "9b4f3812-1772-4a8e-9c97-91f984b867f5",
+    "Videoid": "54ed0f9a-a138-471a-8de4-ab2b07a39fff"
+  },
+  {
+    "Team": 24,
+    "ThumbnailFile": "24.png",
+    "AbstractFile": "24.txt",
+    "Channelid": "9b4f3812-1772-4a8e-9c97-91f984b867f5",
+    "Videoid": "559d58c1-c398-45e7-94c1-0bed39330877"
+  }
+]

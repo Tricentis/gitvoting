@@ -1,0 +1,2 @@
+Rest API Chain Composer - API testing is much easier
+Importing request file, recording UI actions and combine them to a chain API requests.

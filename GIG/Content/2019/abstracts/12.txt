@@ -1,0 +1,1 @@
+Visualize the impacts between requirements in qtest manager by using mind map models

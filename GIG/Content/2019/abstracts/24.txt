@@ -1,0 +1,1 @@
+RPA in-app screen record allows users to quickly check what triggered failure with just 1-click
