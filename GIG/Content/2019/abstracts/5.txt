@@ -1,0 +1,1 @@
+The Tosca Test Detective uses advanced heuristics aka "AI" to replace complex requirements with auto-calculated coverage and execution rates

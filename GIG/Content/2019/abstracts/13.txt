@@ -1,0 +1,4 @@
+Release Readiness Gamification
+Leaderboard for successful sprints and releases.
+Metrics: Last 10 sprints, Trend, Achievements
+Vote for us! #13

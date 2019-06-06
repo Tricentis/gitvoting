@@ -1,0 +1,1 @@
+Handle dependencies smartly to run your inter-dependent test cases! Also, get the right status of your tests.How? Checkout our video.

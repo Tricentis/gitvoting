@@ -1,0 +1,1 @@
+VOICE-GENERATED FLOWCHARTS for RPA (and later other Tricentis Products). The Idea is to allow users with disabilities to use our products or at least some features.

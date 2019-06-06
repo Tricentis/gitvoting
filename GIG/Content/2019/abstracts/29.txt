@@ -1,0 +1,1 @@
+Implementation of a feature in Tosca, wherein user can configure, configuration parameters and its values without typing the values manually. User will only need to select CP name and values will be populated accordingly.
